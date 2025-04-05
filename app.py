@@ -2,17 +2,10 @@ import streamlit as st
 import pickle
 import nltk
 from nltk.corpus import stopwords
-import string
-
-
 import os
 
 
-nltk_data_path = os.path.join(os.getcwd(), 'nltk_data')
-os.makedirs(nltk_data_path, exist_ok=True)
-nltk.download('punkt', download_dir=nltk_data_path)
-nltk.download('stopwords', download_dir=nltk_data_path)
-nltk.data.path.append(nltk_data_path)
+nltk.data.path.append(os.path.join(os.path.dirname(__file__), 'nltk_data'))
 
 
 @st.cache_resource
