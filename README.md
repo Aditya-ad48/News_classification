@@ -27,3 +27,31 @@ Here's a sneak peek at the pipeline:
 | Feature Extraction | TF-IDF, Count Vectorization                  |
 | Model Training     | Multinomial Naive Bayes, Logistic Regression |
 | Evaluation         | Confusion Matrix, Accuracy, Classification Report |
+
+## 🗂️ Project Structure
+
+news_classification/
+│
+├── Fake_News_Classification.ipynb  # Main notebook
+├── voting_classifier_model.pkl     # Saved model (generated after running)
+├── README.md                       # This file
+└── requirements.txt                # Dependencies (optional)
+
+## Model Details
+- **Features**: Text data (preprocessed into TF-IDF vectors).
+- **Target**: Binary classification (0 = fake, 1 = real).
+- **Ensemble Model**:
+  - SVC (sigmoid kernel, `gamma=1.0`, `probability=True`)
+  - Multinomial Naive Bayes
+  - Extra Trees Classifier (50 estimators, `random_state=2`)
+  - **Voting**: Soft voting
+- **Performance**:
+  - Accuracy: ~0.968
+  - Precision: ~0.965
+
+## Results
+The `VotingClassifier` outperforms individual models, achieving:
+- **Accuracy**: 0.968
+- **Precision**: 0.965
+
+See the notebook for a detailed comparison of all tested algorithms.
