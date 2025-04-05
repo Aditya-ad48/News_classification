@@ -35,6 +35,8 @@ Developed in Python using a Jupyter Notebook, it leverages libraries like `panda
 ├── requirements.txt
 ├── voting_classifier_model.pkl            
 ├── README.md
+├── app.py
+├── vectorizer.pkl
                                          
 ```
 ## Model Details
