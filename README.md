@@ -5,8 +5,18 @@ This project implements a machine learning pipeline to classify news articles as
 
 Developed in Python using a Jupyter Notebook, it leverages libraries like `pandas`, `numpy`, `nltk`, `seaborn`, `matplotlib`, and `scikit-learn`.
 
+## 📥 Download Dataset
+
+Due to GitHub file size limitations, the dataset (`train.tsv`) is hosted externally:
+
+🔗 [Download train.tsv from Google Drive](https://drive.google.com/uc?id=YOUR_FILE_ID)
+
+Once downloaded, place it in the root directory of this project.
+
 ## Dataset
-- **File**: `train.tsv` (not included in the repository; provide your own)
+ 
+🔗 [Download train.tsv from Google Drive](https://drive.google.com/file/d/1MVCwrTyZigkhJi-bksa_GxpmvcqFUB5I/view?usp=drive_link)
+
 - **Format**: Tab-separated values (TSV)
 - **Columns**:
   - `Unnamed: 0`: Index (dropped)
@@ -16,26 +26,23 @@ Developed in Python using a Jupyter Notebook, it leverages libraries like `panda
   - `date`: Publication date (dropped)
   - `label`: Target (0 = fake, 1 = real)
   - **Size**: 30,000 rows
-  
-## 🎯 Demo
 
-Here's a sneak peek at the pipeline:
+## 🧠 Features
 
-| Step               | Description                                  |
-|--------------------|----------------------------------------------|
-| Data Preprocessing | Tokenization, stopword removal, cleaning     |
-| Feature Extraction | TF-IDF, Count Vectorization                  |
-| Model Training     | Multinomial Naive Bayes, Logistic Regression |
-| Evaluation         | Confusion Matrix, Accuracy, Classification Report |
+- Text preprocessing using **NLTK**: tokenization, cleaning, stopword removal
+- Exploratory data analysis (EDA) using **matplotlib** and **seaborn**
+- Feature vectorization using **TF-IDF**
+- Classification using **Naive Bayes** and **Logistic Regression**
+- Evaluation using metrics like **accuracy**, **confusion matrix**, **F1-score**
 
 ## 🗂️ Project Structure
 
 ```
-├── news_classification.ipynb     # Main notebook
-├── train.tsv                     # Dataset (not included here)
-├── requirements.txt              # List of dependencies
-├── README.md                     # You're reading this
-└── assets/                       # Visuals, charts (optional)
+├── news_classification.ipynb     
+├── requirements.txt
+├── voting_classifier_model.pkl            
+├── README.md
+                                         
 ```
 ## Model Details
 - **Features**: Text data (preprocessed into TF-IDF vectors).
