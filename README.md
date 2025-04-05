@@ -5,13 +5,6 @@ This project implements a machine learning pipeline to classify news articles as
 
 Developed in Python using a Jupyter Notebook, it leverages libraries like `pandas`, `numpy`, `nltk`, `seaborn`, `matplotlib`, and `scikit-learn`.
 
-## 📥 Download Dataset
-
-Due to GitHub file size limitations, the dataset (`train.tsv`) is hosted externally:
-
-🔗 [Download train.tsv from Google Drive](https://drive.google.com/uc?id=YOUR_FILE_ID)
-
-Once downloaded, place it in the root directory of this project.
 
 ## Dataset
  
