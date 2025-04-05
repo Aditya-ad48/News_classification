@@ -1,6 +1,7 @@
-numpy
+streamlit
 pandas
-matplotlib
-nltk
-seaborn
+numpy
 scikit-learn
+matplotlib
+seaborn
+nltk
