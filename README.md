@@ -30,13 +30,13 @@ Here's a sneak peek at the pipeline:
 
 ## 🗂️ Project Structure
 
-news_classification/
-│
-├── Fake_News_Classification.ipynb  # Main notebook
-├── voting_classifier_model.pkl     # Saved model (generated after running)
-├── README.md                       # This file
-└── requirements.txt                # Dependencies (optional)
-
+```
+├── news_classification.ipynb     # Main notebook
+├── train.tsv                     # Dataset (not included here)
+├── requirements.txt              # List of dependencies
+├── README.md                     # You're reading this
+└── assets/                       # Visuals, charts (optional)
+```
 ## Model Details
 - **Features**: Text data (preprocessed into TF-IDF vectors).
 - **Target**: Binary classification (0 = fake, 1 = real).
